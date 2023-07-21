@@ -2,7 +2,7 @@
 
 BUG FIXES:
 
-* terraform_remote_state: Fixed a panic when reading from `terraform_remote_state` data sources when multiple data sources are defined. ([#33333](https://github.com/hashicorp/terraform/issues/33333))
+* terraform_remote_state: Fixed a panic when reading from `terraform_remote_state` data sources when multiple data sources are defined. Also updates the upstream dependency that Terraform uses for service discovery of Terraform-native services such as Terraform Cloud/Enterprise state storage that was previously not concurrency-safe. ([#33333](https://github.com/hashicorp/terraform/issues/33333)) ([#33333](https://github.com/hashicorp/terraform/issues/33364))
 
 ## 1.5.3 (July 12, 2023)
 
